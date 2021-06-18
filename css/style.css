@@ -1,38 +1,109 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: "Open Sans", sans-serif;
-    margin: 0;
-  }
-  
-  .container {
-    max-width: 1280px;
-    width: 100%;
-    margin: 0 auto;
-  }
-  
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-  }
-  
-  nav {
-    margin-right: 20px;
-  }
-  
-  .nav-link {
-    color: #777;
-    font-weight: 600;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding-left: 16px;
-  }
-  
-  .banner {
-    background-image: url("../img/banner.png");
-    height: 235px;
-  }
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+nav {
+  margin-right: 20px;
+}
+
+.nav-link {
+  color: #777;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-right: 20px;
+}
+
+.banner {
+  background-image: url("../img/banner.png");
+  height: 235px;
+}
+
+.contato {
+  display: flex;
+}
+article, form {
+  flex: 1;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+  color: #9b9b9b;
+}
+
+.contact-heading {
+  font-size: 40px;
+  font-weight: 600;
+  color: #575757;
+}
+
+article {
+  color: #9b9b9b;
+}
+
+input,
+select {
+  margin-bottom: 15px;
+  padding: 5px 10px;
+  border: solid 1px #9b9b9b;
+}
+
+label {
+  color: #9b9b9b;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+textarea {
+  margin-bottom: 22px;
+}
+
+input#curriculo {
+  border: none;
+  margin-bottom: 22px;
+}
+
+button {
+  padding: 10px;
+  background-color: #c2185b;
+  border: none;
+  color: #fff;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 400px;
+  margin-left: 300px;
+  margin-right: 300px;
+  padding: 100px;
+  background-color: #c2185b;
+  color: #ffff;
+}
+
+.categorias, .geral, .institucional {
+  font-weight: 400;
+  font-size: 14px;
+  text-align: justify;
+}
