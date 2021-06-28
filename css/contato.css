@@ -37,11 +37,33 @@ nav {
   height: 235px;
 }
 
+.frete {
+  background-color: #C2185B;
+  padding: 10px 0;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+}
+
+.frete span {
+  transition: font-size 10s;
+
+}
+
+.frete span:hover {
+  font-size: 50px;
+
+}
+
 .contato {
   display: flex;
+
 }
 article, form {
-  flex: 1;
+  flex: 1;  
 }
 
 form {
@@ -51,14 +73,19 @@ form {
   color: #9b9b9b;
 }
 
+.radiobutton {
+  flex-direction: row;
+}
+
 .contact-heading {
   font-size: 40px;
   font-weight: 600;
   color: #575757;
 }
 
-article {
+article p {
   color: #9b9b9b;
+  padding: 10px 0;
 }
 
 input,
@@ -85,25 +112,44 @@ input#curriculo {
 
 button {
   padding: 10px;
+  margin-bottom: 20px;
   background-color: #c2185b;
   border: none;
   color: #fff;
 }
 
+/* pq justify-content não aplica? */
 footer {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  height: 400px;
-  margin-left: 300px;
-  margin-right: 300px;
-  padding: 100px;
+  justify-content: space-between;
+  align-items: center;
+  height: 248px;
   background-color: #c2185b;
   color: #ffff;
+  padding: 0 40px;
+  margin: 0 50px;
+}
+/* perguntar pq o link não herda a color do footer */
+footer a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400px;
+  padding: 5px 0;
+  text-decoration: none;
+}
+.categorias,
+.institucional {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
 }
 
-.categorias, .geral, .institucional {
-  font-weight: 400;
-  font-size: 14px;
-  text-align: justify;
+.geral p {
+width: 30%; 
+}
+
+.institucional h5, .categorias h5 {
+  font-weight: 600;
+  font-size: 20px;
+  padding-bottom: 10px;
 }
