@@ -118,18 +118,13 @@ button {
   color: #fff;
 }
 
-/* pq justify-content não aplica? */
 footer {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 248px;
   background-color: #c2185b;
   color: #ffff;
-  padding: 0 40px;
-  margin: 0 50px;
+  padding: 40px 100px 40px 120px; 
+  justify-content: space-around;
 }
-/* perguntar pq o link não herda a color do footer */
 footer a {
   color: #fff;
   font-size: 16px;
@@ -137,18 +132,18 @@ footer a {
   padding: 5px 0;
   text-decoration: none;
 }
-.categorias,
-.institucional {
+
+.categorias, .institucional {
   display: flex;
   flex-direction: column;
   padding-left: 20px;
 }
 
-.geral p {
-width: 30%; 
+.geral {
+width: 30%;
 }
 
-.institucional h5, .categorias h5 {
+.categorias h5, .institucional h5 {
   font-weight: 600;
   font-size: 20px;
   padding-bottom: 10px;

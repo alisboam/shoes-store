@@ -146,11 +146,10 @@ padding: 20px 0;
 
 footer {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: #c2185b;
   color: #ffff;
-  padding: 0 40px;
+  padding: 40px 100px 40px 120px; 
+  justify-content: space-around;
 }
 footer a {
   color: #fff;
@@ -159,18 +158,18 @@ footer a {
   padding: 5px 0;
   text-decoration: none;
 }
-.categorias,
-.institucional {
+
+.categorias, .institucional {
   display: flex;
   flex-direction: column;
   padding-left: 20px;
 }
 
 .geral {
-width: 30%; 
+width: 30%;
 }
 
-.institucional h5, .categorias h5 {
+.categorias h5, .institucional h5 {
   font-weight: 600;
   font-size: 20px;
   padding-bottom: 10px;
